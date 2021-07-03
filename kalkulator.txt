@@ -1,0 +1,37 @@
+#!/bin/user/python
+
+# module
+import os,sys,time,subprocess
+
+# daftar pilih
+def penjumblahan(a,b):
+    return a+b
+def perkalihan(a,b):
+    return a*b
+def pembagian(a,b):
+    return a/b
+def pengurangan(a,b):
+    return a-b
+
+# pilih
+os.system("figlet kalkulator")
+print("       By Mr Virus Spm")
+print("++++++++++++++++++++++++++++++")
+print("a. penjumblahan")
+print("b. perkalihan")
+print("c. pembagian")
+print("d. pengurangan")
+print("++++++++++++++++++++++++++++++")
+masuk=input("pilih => ")
+
+gas_1 = int(input("masukan angka pertama => "))
+gas_2 = int(input("masukan angka kedua => "))
+
+if masuk =="a":
+    print(gas_1,"+",gas_2,":",penjumblahan(gas_1,gas_2))
+if masuk =="b":
+    print(gas_1,"*",gas_2,":",perkalihan(gas_1,gas_2))
+if masuk =="c":
+    print(gas_1,"/",gas_2,":",pembagian(gas_1,gas_2))
+if masuk =="d":
+    print(gas_1,"-",gas_2,":",pengurangan(gas_1,gas_2))
